@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: micronaut-features
+  server:
+    port: 8100

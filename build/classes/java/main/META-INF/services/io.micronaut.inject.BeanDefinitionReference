@@ -1,0 +1,7 @@
+micronaut.features.model.$$RefreshableModelDefinition$InterceptedDefinitionClass
+micronaut.features.resources.$FeatureControllerDefinitionClass
+micronaut.features.model.$UserDefinitionClass
+micronaut.features.service.impl.$UserServiceImplDefinitionClass
+micronaut.features.model.$EngineerDefinitionClass
+micronaut.features.model.$RefreshableModelDefinitionClass
+micronaut.features.resources.$SecondControllerDefinitionClass
