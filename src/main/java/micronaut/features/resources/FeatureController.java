@@ -17,13 +17,13 @@ import javax.inject.Inject;
 public class FeatureController {
 
     @Inject
-    Engineer engineer;
+    private Engineer engineer;
 
     @Inject
-    RefreshableModel refreshableModel;
+    private RefreshableModel refreshableModel;
 
     @Inject
-    UserService userService;
+    private UserService userService;
 
     /**
      * Endpoint to prove IoC using Micronaut, which is really good since it´s working without use reflection
