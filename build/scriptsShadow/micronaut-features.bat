@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\micronaut-features-0.1-all.jar
+set CLASSPATH=%APP_HOME%\lib\micronaut-features-0.1.jar
 
 @rem Execute micronaut-features
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %MICRONAUT_FEATURES_OPTS%  -jar "%CLASSPATH%" %CMD_LINE_ARGS%

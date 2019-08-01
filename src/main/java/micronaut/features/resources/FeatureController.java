@@ -6,12 +6,18 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.runtime.context.scope.refresh.RefreshEvent;
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;
+import io.vavr.control.Try;
+import micronaut.features.aop.IsUpperCase;
 import micronaut.features.model.Engineer;
 import micronaut.features.model.Human;
 import micronaut.features.model.RefreshableModel;
 import micronaut.features.service.UserService;
 
 import javax.inject.Inject;
+import java.util.concurrent.CompletableFuture;
+
+import static io.vavr.API.*;
+import static io.vavr.Predicates.instanceOf;
 
 @Controller("/micronaut")
 public class FeatureController {
@@ -56,7 +62,7 @@ public class FeatureController {
         return Observable.just("Hello " + name + " to reactive world in Micronaut")
                 .filter(value -> value.contains("politrons"))
                 .map(String::toUpperCase)
-                .map(value -> value.concat("!!!!"))
+                .flatMap(value -> Observable.just(value.concat("!!!!")))
                 .map(value -> value.concat(" Request processed in Thread:" + Thread.currentThread().getName()))
                 .subscribeOn(Schedulers.newThread());
     }
@@ -71,9 +77,39 @@ public class FeatureController {
         return "Currrent time is " + refreshableModel.getTime();
     }
 
+    /**
+     * Another great feature of Micronaut is that is completely async and allow return in the resource
+     * a [CompletableFuture] allowing run your program async and dont have to worry to render the result
+     * once it complete.
+     */
+    @Get("/completableFuture")
+    public CompletableFuture<String> getResponseAsync() {
+        return CompletableFuture.supplyAsync(() -> "Hello Async Java world")
+                .thenApply(String::toUpperCase)
+                .thenCompose(value -> CompletableFuture.supplyAsync(() -> value + "!!!"));
+    }
+
+    /**
+     *
+     */
+    @Get("/aop/{value}")
+    public String checkIfIsUpperCase(String value) {
+        Try<String> response = Try.of(() -> checkIfIsUppercase(value));
+        if (response.isSuccess()) {
+            return response.get();
+        }
+        return response.failed().get().getMessage();
+    }
+
+
     @Get("/refreshTime")
     public void refreshTime() {
         ApplicationContext context = ApplicationContext.run();
         context.publishEvent(new RefreshEvent());
+    }
+
+    @IsUpperCase
+    public String checkIfIsUppercase(String value) {
+        return value + " WORKS";
     }
 }

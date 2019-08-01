@@ -8,6 +8,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
@@ -50,10 +51,31 @@ public class ControllersSpec {
     }
 
     @Test
-    public void tesRxJavaResponse() {
+    public void testRxJavaResponse() {
         String response = client.toBlocking()
                 .retrieve(HttpRequest.GET("/micronaut/rxJava/politrons"));
         assertTrue(response.contains("HELLO POLITRONS TO REACTIVE WORLD IN MICRONAUT!!!!"));
+    }
+
+    @Test
+    public void testCompletableFutureResponse() {
+        String response = client.toBlocking()
+                .retrieve(HttpRequest.GET("/micronaut/completableFuture"));
+        assertEquals("HELLO ASYNC JAVA WORLD!!!", response);
+    }
+
+    @Test
+    public void testAOPResponse() {
+        String response = client.toBlocking()
+                .retrieve(HttpRequest.GET("/micronaut/aop/POLITRONS"));
+        assertEquals("POLITRONS WORKS", response);
+    }
+
+    @Test
+    public void testAOPResponseError() {
+        String response = client.toBlocking()
+                .retrieve(HttpRequest.GET("/micronaut/aop/politrons"));
+        assertEquals("Argument passed to method must be String in upper case", response);
     }
 
     /**
@@ -65,6 +87,6 @@ public class ControllersSpec {
     public void testSecondResponse() {
         String response = client.toBlocking()
                 .retrieve(HttpRequest.GET("/second"));
-        assertTrue("War of the Worlds".equals(response));
+        assertEquals("War of the Worlds", response);
     }
 }
