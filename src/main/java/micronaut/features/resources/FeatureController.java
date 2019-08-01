@@ -11,6 +11,7 @@ import micronaut.features.aop.IsUpperCase;
 import micronaut.features.model.Engineer;
 import micronaut.features.model.Human;
 import micronaut.features.model.RefreshableModel;
+import micronaut.features.retry.RetryStrategy;
 import micronaut.features.service.UserService;
 
 import javax.inject.Inject;
@@ -30,6 +31,9 @@ public class FeatureController {
 
     @Inject
     private UserService userService;
+
+    @Inject
+    private RetryStrategy retryStrategy;
 
     /**
      * Endpoint to prove IoC using Micronaut, which is really good since it´s working without use reflection
@@ -99,6 +103,15 @@ public class FeatureController {
     @Get("/aop/{value}")
     public String checkIfIsUpperCase(String value) {
         Try<String> response = Try.of(() -> checkIfIsUppercase(value));
+        if (response.isSuccess()) {
+            return response.get();
+        }
+        return response.failed().get().getMessage();
+    }
+
+    @Get("/retryStrategy")
+    public String retryStrategy() {
+        Try<String> response = Try.of(() -> retryStrategy.getValue());
         if (response.isSuccess()) {
             return response.get();
         }

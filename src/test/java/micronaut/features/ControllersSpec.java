@@ -78,6 +78,14 @@ public class ControllersSpec {
         assertEquals("Argument passed to method must be String in upper case", response);
     }
 
+    @Test
+    public void testRetryStrategy() {
+        String response = client.toBlocking()
+                .retrieve(HttpRequest.GET("/micronaut/retryStrategy"));
+        assertTrue("Succeed Response".equals(response) || "Error getting the value".equals(response));
+    }
+
+
     /**
      * EmbeddedServer of the micronaut test framework is so cool, that´s is able to find all
      * endpoints of your application and being able to invoke it with the client.

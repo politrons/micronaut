@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d68341fe-d1df-49f1-ac80-3c5a72096c33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/model/Engineer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Engineer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/model/RefreshableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/ioc/RefreshableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/ioc/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/retry/RetryStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,12 +70,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -88,16 +89,17 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1028">
-              <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+            <state relative-caret-position="243">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1350#1351#0" expanded="true" />
                 <element signature="e#1409#1410#0" expanded="true" />
-                <element signature="e#4659#4660#0" expanded="true" />
+                <element signature="e#5099#5100#0" expanded="true" />
+                <element signature="e#5138#5139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,21 +115,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/RefreshableModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/model/RefreshableModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -139,19 +127,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/RetryStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Engineer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-runtime/1.1.4/7b1c5da5300bf4f1025d951a30cc33888308096/micronaut-runtime-1.1.4-sources.jar!/io/micronaut/retry/annotation/Retryable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="45" selection-start-line="15" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,20 +171,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+            <state relative-caret-position="453">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Human.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -185,8 +185,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -213,11 +213,13 @@
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/aop/IsUpperCaseValue.java" />
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/aop/IsUpperCase.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java" />
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/model/Engineer.java" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/micronaut/features/retry/RetryStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -282,7 +284,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +294,25 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micronaut-features" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="retry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micronaut-features" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="retry" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -347,37 +368,7 @@
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -396,6 +387,41 @@
               <item name="Gradle: io.micronaut:micronaut-aop:1.1.4" type="70bed36:NamedLibraryElementNode" />
               <item name="micronaut-aop-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
               <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-runtime:1.1.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-runtime:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-runtime-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-runtime:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-runtime-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-runtime:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-runtime-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+              <item name="retry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-runtime:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-runtime-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+              <item name="retry" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -437,10 +463,10 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -462,7 +488,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ControllersSpec">
+  <component name="RunManager" selected="JUnit.ControllersSpec.testRetryStrategy">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -519,23 +545,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllersSpec.testCompletableFutureResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="micronaut-features.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="micronaut.features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="micronaut.features" />
-      <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
-      <option name="METHOD_NAME" value="testCompletableFutureResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ControllersSpec.testPathParamResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="micronaut-features.test" />
       <extension name="coverage">
@@ -547,6 +556,23 @@
       <option name="PACKAGE_NAME" value="micronaut.features" />
       <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
       <option name="METHOD_NAME" value="testPathParamResponse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllersSpec.testRetryStrategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="micronaut-features.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="micronaut.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="micronaut.features" />
+      <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
+      <option name="METHOD_NAME" value="testRetryStrategy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -571,11 +597,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllersSpec.testRetryStrategy" />
         <item itemvalue="JUnit.ControllersSpec" />
         <item itemvalue="JUnit.ControllersSpec.testAOPResponseError" />
         <item itemvalue="JUnit.ControllersSpec.testAOPResponse" />
         <item itemvalue="JUnit.ControllersSpec.testPathParamResponse" />
-        <item itemvalue="JUnit.ControllersSpec.testCompletableFutureResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -644,43 +670,51 @@
       <option name="project" value="LOCAL" />
       <updated>1564697497226</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AOP and Async">
+      <created>1564697824263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564697824263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllersSpec_testCompletableFutureResponse - 2019.08.01 at 14h 19m 10s.xml">
-      <configuration name="ControllersSpec.testCompletableFutureResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testCompletableFutureResponse - 2019.08.01 at 19h 33m 29s.xml">
-      <configuration name="ControllersSpec.testCompletableFutureResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testPathParamResponse - 2019.08.01 at 19h 34m 00s.xml">
-      <configuration name="ControllersSpec.testPathParamResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponse - 2019.08.01 at 22h 15m 29s.xml">
-      <configuration name="ControllersSpec.testAOPResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponse - 2019.08.01 at 22h 16m 07s.xml">
-      <configuration name="ControllersSpec.testAOPResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponse - 2019.08.01 at 22h 16m 17s.xml">
-      <configuration name="ControllersSpec.testAOPResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponseError - 2019.08.01 at 22h 16m 49s.xml">
-      <configuration name="ControllersSpec.testAOPResponseError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponseError - 2019.08.01 at 22h 27m 11s.xml">
-      <configuration name="ControllersSpec.testAOPResponseError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testAOPResponseError - 2019.08.01 at 22h 27m 28s.xml">
-      <configuration name="ControllersSpec.testAOPResponseError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec - 2019.08.02 at 00h 06m 59s.xml">
+    <history-entry file="ControllersSpec - 2019.08.02 at 00h 23m 14s.xml">
       <configuration name="ControllersSpec" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 27m 33s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 27m 49s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 27m 54s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 28m 02s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 28m 10s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 28m 17s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 28m 34s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 31m 37s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec_testRetryStrategy - 2019.08.02 at 00h 31m 45s.xml">
+      <configuration name="ControllersSpec.testRetryStrategy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -731,9 +765,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java</url>
-          <line>45</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java</url>
+          <line>113</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -885,53 +933,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Human.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/model/Human.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/RefreshableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/ioc/Engineer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/model/Engineer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
@@ -944,18 +960,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/SecondController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -963,16 +967,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/model/RefreshableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="45" selection-start-line="15" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/RetryStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+        <state relative-caret-position="243">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1350#1351#0" expanded="true" />
             <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
+            <element signature="e#5099#5100#0" expanded="true" />
+            <element signature="e#5138#5139#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-runtime/1.1.4/7b1c5da5300bf4f1025d951a30cc33888308096/micronaut-runtime-1.1.4-sources.jar!/io/micronaut/retry/annotation/Retryable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
@@ -1015,6 +1086,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1026,6 +1098,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>main|micronaut-features</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
