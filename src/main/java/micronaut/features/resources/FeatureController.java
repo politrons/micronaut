@@ -90,7 +90,11 @@ public class FeatureController {
     }
 
     /**
-     *
+     * Endpoint to show how AOP works with micronaut.
+     * For this example since the invocation of the method it might throw an exception
+     * is mandatory for the shake of the program to wrap in the Monad Try of Vavr.
+     * When we invoke the method [checkIfIsUppercase] since it has the annotation
+     * [IsUpperCase] it will be intercept by the interceptor [IsUpperCaseValue]
      */
     @Get("/aop/{value}")
     public String checkIfIsUpperCase(String value) {
