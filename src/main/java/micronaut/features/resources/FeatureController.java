@@ -108,6 +108,12 @@ public class FeatureController {
         context.publishEvent(new RefreshEvent());
     }
 
+    /**
+     * Using the annotation that we create we will make the invocation being previously
+     * got by [IsUpperCaseValue] interceptor class and method [intercept] if everything
+     * is fine, the interceptor it will proceed to this method, otherwise it will rise an
+     * Exception back.
+     */
     @IsUpperCase
     public String checkIfIsUppercase(String value) {
         return value + " WORKS";

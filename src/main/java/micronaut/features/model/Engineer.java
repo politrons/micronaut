@@ -1,5 +1,6 @@
 package micronaut.features.model;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 /**
@@ -9,13 +10,13 @@ import javax.inject.Singleton;
 @Singleton
 public class Engineer {
 
+    /**
+     * Micronaut IoC it will use the javax Inject annotation to inject the dependency in this entity.
+     */
+    @Inject
     Human human;
 
-    public Engineer(Human human) {
-        this.human = human;
-    }
-
-    public String getName(){
+    public String getName() {
         return human.getName();
     }
 }

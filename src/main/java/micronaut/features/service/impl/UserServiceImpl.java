@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     private Human human;
 
     /**
-     * Using micronaut we can use standard javax annotation @PostConstruct to be ivoked
+     * Using micronaut we can use standard javax annotation @PostConstruct to be invoked
      * after instantiate the bean.
      */
     @PostConstruct
