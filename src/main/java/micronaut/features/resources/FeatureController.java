@@ -16,7 +16,6 @@ import micronaut.features.model.Human;
 import micronaut.features.model.RefreshableModel;
 import micronaut.features.retry.RetryStrategy;
 import micronaut.features.service.UserService;
-import micronaut.features.service.impl.UserServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

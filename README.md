@@ -11,6 +11,7 @@ You can find the official documentation [here](https://docs.micronaut.io/latest/
 * Example of how IoC works [Here](src/main/java/micronaut/features/model)
 * Example of how AOP works [here](src/main/java/micronaut/features/aop/NotNullInterceptor.java)
 * Example of how Retry strategy works [here](src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java)
+* Example of how Http Filters works [here](src/main/java/micronaut/features/filter/RequestTraceFilter.java)
 
 ### Run application
 
