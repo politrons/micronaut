@@ -20,7 +20,7 @@ You can find the official documentation [here](https://docs.micronaut.io/latest/
     ```
     brew install micronaut
     
-    mn create-app hello-world
+    mn create-app micronaut-features
     ```
 
 * Create the jar
