@@ -21,6 +21,8 @@ You can find the official documentation [here](https://docs.micronaut.io/latest/
     brew install micronaut
     
     mn create-app micronaut-features
+    
+    copy source there
     ```
 
 * Create the jar
