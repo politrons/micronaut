@@ -2,6 +2,8 @@ package micronaut.features;
 
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.http.HttpRequest;
+import io.micronaut.http.MediaType;
+import io.micronaut.http.MutableHttpRequest;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.runtime.server.EmbeddedServer;
 import org.junit.AfterClass;
@@ -85,6 +87,28 @@ public class ControllersSpec {
         assertTrue("Succeed Response".equals(response) || "Error getting the value".equals(response));
     }
 
+    @Test
+    public void testRequestResponse() {
+        String response = client.toBlocking()
+                .retrieve(HttpRequest.GET("/micronaut/requestResponse"));
+        assertEquals("Hello Nobody!!", response);
+    }
+
+    @Test
+    public void testVersioningAPI() {
+
+        MutableHttpRequest<Object> request = HttpRequest
+                .GET("/micronaut/apiVersioned")
+                .header("X-API-VERSION", "1")
+                .accept(MediaType.APPLICATION_JSON_TYPE);
+        client.toBlocking().exchange(request);
+
+        MutableHttpRequest<Object> request1 = HttpRequest
+                .GET("/micronaut/apiVersioned")
+                .header("X-API-VERSION", "2")
+                .accept(MediaType.APPLICATION_JSON_TYPE);
+        client.toBlocking().exchange(request1);
+    }
 
     /**
      * EmbeddedServer of the micronaut test framework is so cool, that´s is able to find all

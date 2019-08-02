@@ -1,6 +1,9 @@
 package micronaut.features.resources;
 
 import io.micronaut.context.ApplicationContext;
+import io.micronaut.core.version.annotation.Version;
+import io.micronaut.http.HttpRequest;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.runtime.context.scope.refresh.RefreshEvent;
@@ -13,15 +16,25 @@ import micronaut.features.model.Human;
 import micronaut.features.model.RefreshableModel;
 import micronaut.features.retry.RetryStrategy;
 import micronaut.features.service.UserService;
+import micronaut.features.service.impl.UserServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.util.concurrent.CompletableFuture;
 
-import static io.vavr.API.*;
-import static io.vavr.Predicates.instanceOf;
+import static io.micronaut.http.HttpResponse.ok;
 
+/**
+ * Async Reactive programing with Micronaut:
+ * If your controller method returns a non-blocking type such as an RxJava Observable or a CompletableFuture
+ * then Micronaut will use the Event loop thread to subscribe to the result.
+ * Here we cover both examples.
+ */
 @Controller("/micronaut")
 public class FeatureController {
+
+    private static final Logger logger = LoggerFactory.getLogger(FeatureController.class);
 
     @Inject
     private Engineer engineer;
@@ -123,6 +136,39 @@ public class FeatureController {
     public void refreshTime() {
         ApplicationContext context = ApplicationContext.run();
         context.publishEvent(new RefreshEvent());
+    }
+
+    /**
+     * Micronaut Http server also provide the possibility to manage with the request/response
+     * our self we just need to expect [HttpRequest] and return [HttpResponse]
+     */
+    @Get("/requestResponse")
+    HttpResponse<String> requestResponse(HttpRequest<?> request) {
+        String name = request.getParameters()
+                .getFirst("name")
+                .orElse("Nobody");
+        return ok("Hello " + name + "!!")
+                .header("X-My-Header", "Foo");
+    }
+
+    /**
+     * In Micronaut, in order to have API versioning, you have to enable and configure in your application.yml.
+     * Once is configured by Header or parameter the way the argument Version is passed, you can have multiple
+     * endpoints with same address in your resources.
+     * In our example we pass the header [X-API-VERSION] key with value [1 || 2]
+     */
+    @Version("1")
+    @Get("/apiVersioned")
+    String apiV1() {
+        logger.info("Endpoint version 1 reached");
+        return "hello world V1";
+    }
+
+    @Version("2")
+    @Get("/apiVersioned")
+    String apiv2() {
+        logger.info("Endpoint version 2 reached");
+        return "hello world V2";
     }
 
     /**

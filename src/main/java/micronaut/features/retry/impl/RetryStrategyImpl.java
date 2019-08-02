@@ -2,7 +2,6 @@ package micronaut.features.retry.impl;
 
 import io.micronaut.retry.annotation.Retryable;
 import micronaut.features.retry.RetryStrategy;
-import micronaut.features.service.impl.UserServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +15,7 @@ import javax.inject.Singleton;
 @Singleton
 public class RetryStrategyImpl implements RetryStrategy {
 
-    private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(RetryStrategyImpl.class);
 
     @Override
     @Retryable(attempts = "3", delay = "1s")
