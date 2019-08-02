@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d68341fe-d1df-49f1-ac80-3c5a72096c33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/micronaut/features/resources/FeatureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/micronaut/features/resources/FeatureController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,16 +65,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="60">
-                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/filter/RequestTraceFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http/1.1.4/ccb37ab0a4eb7ed7c407737ffa808c3e5cd75154/micronaut-http-1.1.4-sources.jar!/io/micronaut/http/filter/HttpServerFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http/1.1.4/ccb37ab0a4eb7ed7c407737ffa808c3e5cd75154/micronaut-http-1.1.4-sources.jar!/io/micronaut/http/filter/HttpFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core/1.1.4/6294d0212ef9196d52b636fd1f93069ee6927da8/micronaut-core-1.1.4-sources.jar!/io/micronaut/core/order/Ordered.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/Flowable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="10208" column="42" selection-start-line="10208" selection-start-column="42" selection-end-line="10208" selection-end-column="42" />
+              <folding>
+                <element signature="e#566102#566103#0" expanded="true" />
+                <element signature="e#566155#566156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/ObservableSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,48 +138,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="157" column="80" lean-forward="true" selection-start-line="157" selection-start-column="80" selection-end-line="157" selection-end-column="80" />
+            <state relative-caret-position="480">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1350#1351#0" expanded="true" />
                 <element signature="e#1409#1410#0" expanded="true" />
-                <element signature="e#5099#5100#0" expanded="true" />
-                <element signature="e#5138#5139#0" expanded="true" />
+                <element signature="e#6823#6824#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="45" selection-start-line="15" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -139,40 +162,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/fb592a3d57b11e71eb7a6211dd12ba824c5dd037/reactive-streams-1.0.2-sources.jar!/org/reactivestreams/Publisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/fb592a3d57b11e71eb7a6211dd12ba824c5dd037/reactive-streams-1.0.2-sources.jar!/org/reactivestreams/Subscriber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http-client/1.1.4/2de402c7ebcf48ca0083a8357c105ca855444115/micronaut-http-client-1.1.4.jar!/io/micronaut/http/client/DefaultHttpClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#98989#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http-client/1.1.4/7c154c764aaa4a706ed48b0b51196b203d795826/micronaut-http-client-1.1.4-sources.jar!/io/micronaut/http/client/HttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="300">
+                <caret line="20" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="18" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -216,8 +215,9 @@
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/resources/ErrorHandlingController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java" />
         <option value="$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/micronaut/features/filter/RequestTraceFilter.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -411,6 +411,41 @@
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-core:1.1.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-core:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-core-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-core:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-core-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-core:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-core-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-core:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-core-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="micronaut" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Gradle: io.micronaut:micronaut-http:1.1.4" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -425,6 +460,14 @@
               <item name="Gradle: io.micronaut:micronaut-http:1.1.4" type="70bed36:NamedLibraryElementNode" />
               <item name="micronaut-http-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.micronaut:micronaut-http:1.1.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="micronaut-http-1.1.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -478,6 +521,24 @@
               <item name="micronaut" type="462c0819:PsiDirectoryNode" />
               <item name="retry" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.reactivex.rxjava2:rxjava:2.2.6" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.reactivex.rxjava2:rxjava:2.2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="rxjava-2.2.6.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.reactivex.rxjava2:rxjava:2.2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="rxjava-2.2.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micronaut-features" type="b2602c69:ProjectViewProjectNode" />
@@ -586,6 +647,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ControllersSpec.testEngineerResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="micronaut-features.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="micronaut.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="micronaut.features" />
+      <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
+      <option name="METHOD_NAME" value="testEngineerResponse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ControllersSpec.testErrorHandlingPageNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="micronaut-features.test" />
       <extension name="coverage">
@@ -614,23 +692,6 @@
       <option name="PACKAGE_NAME" value="micronaut.features" />
       <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
       <option name="METHOD_NAME" value="testRequestResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControllersSpec.testRetryStrategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="micronaut-features.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="micronaut.features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="micronaut.features" />
-      <option name="MAIN_CLASS_NAME" value="micronaut.features.ControllersSpec" />
-      <option name="METHOD_NAME" value="testRetryStrategy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -673,10 +734,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ControllersSpec" />
+        <item itemvalue="JUnit.ControllersSpec.testEngineerResponse" />
         <item itemvalue="JUnit.ControllersSpec.testVersioningAPI" />
         <item itemvalue="JUnit.ControllersSpec.testErrorHandlingPageNotFound" />
         <item itemvalue="JUnit.ControllersSpec.testRequestResponse" />
-        <item itemvalue="JUnit.ControllersSpec.testRetryStrategy" />
       </list>
     </recent_temporary>
   </component>
@@ -766,16 +827,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564739621161</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="AOP and Async">
+      <created>1564740126491</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564740126491</updated>
+    </task>
+    <task id="LOCAL-00011" summary="documentation">
+      <created>1564740183002</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564740183002</updated>
+    </task>
+    <task id="LOCAL-00012" summary="filters">
+      <created>1564741262101</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1564741262101</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllersSpec_testRequestResponse - 2019.08.02 at 00h 51m 57s.xml">
-      <configuration name="ControllersSpec.testRequestResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllersSpec_testErrorHandlingPageNotFound - 2019.08.02 at 01h 09m 38s.xml">
-      <configuration name="ControllersSpec.testErrorHandlingPageNotFound" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ControllersSpec_testErrorHandlingPageNotFound - 2019.08.02 at 01h 10m 36s.xml">
       <configuration name="ControllersSpec.testErrorHandlingPageNotFound" configurationId="JUnit" />
     </history-entry>
@@ -800,6 +876,12 @@
     <history-entry file="ControllersSpec - 2019.08.02 at 11h 52m 14s.xml">
       <configuration name="ControllersSpec" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ControllersSpec_testEngineerResponse - 2019.08.02 at 12h 15m 49s.xml">
+      <configuration name="ControllersSpec.testEngineerResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllersSpec - 2019.08.02 at 12h 20m 28s.xml">
+      <configuration name="ControllersSpec" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="6" />
@@ -812,7 +894,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.5889698" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.588535" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49778107" weight="0.57707006" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926037" weight="0.48917198" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -828,7 +910,7 @@
       <window_info anchor="bottom" id="Elm Compiler" order="14" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.28032544" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.28032544" />
       <window_info anchor="right" id="Maven Projects" order="2" weight="0.24235807" />
       <window_info anchor="right" id="Cargo" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
@@ -847,20 +929,22 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="AOP and Async" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP and Async" />
+    <MESSAGE value="documentation" />
+    <MESSAGE value="filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java</url>
-          <line>65</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java</url>
-          <line>126</line>
+          <line>125</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -871,6 +955,12 @@
           <line>15</line>
           <properties />
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micronaut/features/filter/RequestTraceFilter.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1139,16 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1166,6 +1246,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/retry/impl/RetryStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#6823#6824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/ObservableSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10208" column="42" selection-start-line="10208" selection-start-column="42" selection-end-line="10208" selection-end-column="42" />
+          <folding>
+            <element signature="e#566102#566103#0" expanded="true" />
+            <element signature="e#566155#566156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.6/2c70510784f92eba5ab6a41e47e91d476d1ebc0b/rxjava-2.2.6-sources.jar!/io/reactivex/Flowable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core/1.1.4/6294d0212ef9196d52b636fd1f93069ee6927da8/micronaut-core-1.1.4-sources.jar!/io/micronaut/core/order/Ordered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http/1.1.4/ccb37ab0a4eb7ed7c407737ffa808c3e5cd75154/micronaut-http-1.1.4-sources.jar!/io/micronaut/http/filter/HttpFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-http/1.1.4/ccb37ab0a4eb7ed7c407737ffa808c3e5cd75154/micronaut-http-1.1.4-sources.jar!/io/micronaut/http/filter/HttpServerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/filter/RequestTraceFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/micronaut/features/ControllersSpec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1176,25 +1335,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micronaut/features/resources/FeatureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="157" column="80" lean-forward="true" selection-start-line="157" selection-start-column="80" selection-end-line="157" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#5099#5100#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="60">
-            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="18" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

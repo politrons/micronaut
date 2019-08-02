@@ -15,13 +15,21 @@ You can find the official documentation [here](https://docs.micronaut.io/latest/
 
 ### Run application
 
-* Create the jar
+* install micronaut and create project
 
-```
-./gradlew assemble
-```
+    ```
+    brew install micronaut
+    
+    mn create-app hello-world
+    ```
+
+* Create the jar
+    
+    ```
+    ./gradlew assemble
+    ```
 
 * run the Java process 
-```
-java -jar build/libs/micronaut-features-0.1.jar
-```
+    ```
+    java -jar build/libs/micronaut-features-0.1.jar
+    ```
